@@ -56,8 +56,8 @@ body {
     border: 1px solid black !important;
 }
 
-.bg-black{
-    background:black !important;
+.bg-black {
+    background: #000 !important;
 }
 
 .overlay {
@@ -75,10 +75,17 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
 
-
-
-
+.btt-link {
+    cursor: pointer;
+}
 
 
 /* -------------------------------- Media Queries */
@@ -106,13 +113,12 @@ a.category-badge > span.badge:hover {
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
-
-@media(max-width: 991px){
+@media (max-width: 991px) {
     .header-container {
-        padding-top:116px;
+        padding-top: 116px;
     }
 
-    body{
-        height: calc(100vh-116px);
+    body {
+        height: calc(100vh - 116px);
     }
 }
