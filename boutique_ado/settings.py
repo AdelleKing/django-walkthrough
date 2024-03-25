@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-adelleking-djangowalkth-6iu9cqnvp4x.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['django-walkthrough-adelle-419a8bb6f069.herokuapp.com', 'localhost']
 
 
 # Application definition
