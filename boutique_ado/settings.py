@@ -29,9 +29,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'Development' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['django-walkthrough-adelle-419a8bb6f069.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['django-walkthrough-adelle-419a8bb6f069.herokuapp.com', 'localhost',
+'8000-adelleking-djangowalkth-6iu9cqnvp4x.ws-eu110.gitpod.io']
 
 
 # Application definition
@@ -194,7 +195,7 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
 
-    
+
     AWS_STORAGE_BUCKET_NAME = 'adellesboutiqueado'
     AWS_SE_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
